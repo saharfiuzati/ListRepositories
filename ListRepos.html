@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+    <link rel="stylesheet" href="ListRepos.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>List My Repos From Github!</title>
+</head>
+
+<body>
+    
+   <form>
+       <div class="form-group">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello!</h1>
+                <p class="lead">Please enter the Github id in order to show the repositories related to it!</p>
+            </div>
+            <div id="input-controls">
+                    <input type="text" id="targetUserTxt" class="form-control">
+                    <button id="fetchReposBtn" class="btn btn-primary">Send</button>
+            </div>
+       </div>
+   </form>
+   <div class="container">
+       <div class="row">
+           <div class="col">
+                <div id="reposList"></div>
+           </div>
+           <div class="col">
+                <b>
+                    <div id="forks"></div>
+                </b>       
+            </div>
+            <div class="col">
+                <b>
+                    <div id="date"></div>
+                </b>       
+            </div>
+            <div class="col">
+                <b>
+                    <div id=stars></div>
+                </b>
+            </div>
+            <div class="col">
+                <b>
+                    <a id="link"></a>
+                </b>            
+            </div>
+       </div>
+    </div>
+   <p id="error-message" class="font-weight-bold"></p>
+    
+    <script type="text/javascript" src="fetch.js"></script>    
+</body>
+
+</html>

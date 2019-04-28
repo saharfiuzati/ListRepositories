@@ -1,0 +1,45 @@
+body{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+i{
+    color: gold;
+}
+#fetchReposBtn{
+    margin-top: 3em;
+}
+#input-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#targetUserTxt{
+    margin-right: 2em;
+}
+.container{
+    margin-left: 0;
+    padding-left: 0;
+}
+#reposList img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1em;
+}
+#error-message{
+    color: red;
+    font-size: 30px;
+}
+.list-group-item.list-group-item-action{
+    width: 600px;
+}
+#allinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#details{
+    width: 6rem;
+}
+#link{
+    color: red;
+}
